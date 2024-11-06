@@ -1,0 +1,16 @@
+.clear-button {
+    background-color:  #c9302c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: -1px;
+    padding: 15px 20px;  
+    border-radius: 10px;  
+    font-weight: bold;
+}
+
+.clear-button:hover {
+    background-color: red;
+}

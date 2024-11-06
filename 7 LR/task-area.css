@@ -1,0 +1,90 @@
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    width: 23%;
+    box-sizing: border-box;
+}
+
+.column-header {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.backlog .column-header {
+    color: orange;
+    background-color: rgb(252, 230, 190);
+}
+
+.progress .column-header {
+    color: blue;
+    background-color: rgb(206, 211, 255);
+}
+
+.ready .column-header {
+    color: green;
+    background-color: rgb(206, 255, 210);
+}
+
+.basket .column-header {
+    color: red;
+    background-color: rgb(255, 206, 206);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column ul li {
+    background-color: #f8f3f3;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.column ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    border-radius: 10px;
+}
+
+
+.column .backlog ul li::before {
+    background-color: rgb(252, 230, 190); /* Бэклог */
+}
+
+.column .processing ul li::before { 
+    background-color: rgb(206, 211, 255); /* В процессе */
+}
+
+.column .ready ul li::before {
+    background-color: rgb(206, 255, 210); /* Готово */
+}
+
+.column .basket ul li::before { 
+    background-color: rgb(255, 206, 206); /* Корзина */
+}
+.empty-task {
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: gray;
+    background-color: white;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
