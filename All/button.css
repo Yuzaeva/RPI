@@ -1,0 +1,22 @@
+.clear-button {
+    background-color:  #c9302c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: -1px;
+    padding: 15px 20px;  
+    border-radius: 10px;  
+    font-weight: bold;
+}
+
+.clear-button:hover {
+    background-color: red;
+}
+
+.clear-button:disabled, .clear-button:hover:disabled {
+    background-color: rgb(78, 77, 77);
+    border: 1px solid rgb(78, 77, 77);
+    cursor: not-allowed;
+}
